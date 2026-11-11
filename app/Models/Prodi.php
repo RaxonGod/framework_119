@@ -8,7 +8,9 @@ class Prodi extends Model
 {
     protected $table = 'prodi';
     protected $primaryKey = 'id_prodi';
-    protected $fillable = ['kode_prodi', 'nama_prodi'];
+    public $incrementing = false;
+    protected $keyType = 'string';
+    protected $fillable = ['id_prodi', 'nama_prodi'];
 
     public function mahasiswa()
     {

@@ -1,5 +1,4 @@
-<h1>Tambah Program Studi</h1>
-<form method="POST" action="{{ route('prodi.store') }}">
+<form action="{{ route('prodi.store') }}" method="POST">
     @csrf
     @include('prodi._form')
     <button type="submit">Simpan</button>

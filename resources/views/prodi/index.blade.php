@@ -9,7 +9,7 @@
     <tr><th>Kode</th><th>Nama Prodi</th><th>Aksi</th></tr>
     @forelse ($data as $p)
 <tr>
-    <td>{{ $p->kode_prodi }}</td>
+    <td>{{ $p->id_prodi }}</td>
     <td>{{ $p->nama_prodi }}</td>
     <td>
         @if (session('user_role') == 1)

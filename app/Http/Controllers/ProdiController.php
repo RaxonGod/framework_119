@@ -10,7 +10,7 @@ class ProdiController extends Controller
     public function store(Request $request)
 {
     $validated = $request->validate([
-        'kode_prodi' => 'required|string|max:10|unique:prodi,kode_prodi',
+        'id_prodi' => 'required|string|max:10|unique:prodi,id_prodi',
         'nama_prodi' => 'required|string|max:100',
     ]);
 
@@ -22,7 +22,7 @@ public function update(Request $request, $id)
 {
     $prodi = Prodi::findOrFail($id);
     $validated = $request->validate([
-        'kode_prodi' => 'required|string|max:10|unique:prodi,kode_prodi,' . $id . ',id_prodi',
+        'id_prodi' => 'required|string|max:10|unique:prodi,id_prodi',
         'nama_prodi' => 'required|string|max:100',
     ]);
 

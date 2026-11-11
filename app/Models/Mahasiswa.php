@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Mahasiswa extends Model
 {
+    const PANJANG_NIM = 7;
+
     protected $table = 'mahasiswa';
     protected $primaryKey = 'id_mahasiswa';
     protected $guarded = ['id_mahasiswa'];
